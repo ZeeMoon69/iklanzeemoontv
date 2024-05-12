@@ -88,12 +88,17 @@ function create_pu()
 
         window.pux = dpu.make(target, {
             newTab: true,
-            cookieExpires: 60 * 24 / 1,
+            cookieExpires: 60 * 24 ,
             afterOpen: function(pop) {
                 window.location.href = origin;
             }
         });
 
+
+<!-- untuk waktu kalau mau 1x muncul 24jam sekali pake ini cookieExpires: 60 * 24 / 1, -->
+
+
+	    
         if(!window.pux.isExecuted() && window.pu.complete_floating_banner){
             inject('body', 'complete_floating_banner');
         }
