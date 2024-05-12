@@ -95,7 +95,6 @@ function create_pu()
         });
 
 
-<!-- untuk waktu kalau mau 1x muncul 24jam sekali pake ini cookieExpires: 60 * 24 / 1, -->
 
 
 	    
