@@ -84,15 +84,13 @@ function create_pu()
             origin = tmp_link;
         }
 
-        console.log('pux init');
-
-        window.pux = dpu.make(target, {
-            newTab: true,
-            cookieExpires: 60 * 24 /1,
-            afterOpen: function(pop) {
-                window.location.href = origin;
-            }
-        });
+       window.pux = dpu.make(target, {
+    newTab: true,
+    cookieExpires: 60, // 60 minutes, i.e., 1 hour
+    afterOpen: function(pop) {
+        window.location.href = origin;
+    }
+});
 
 
 
