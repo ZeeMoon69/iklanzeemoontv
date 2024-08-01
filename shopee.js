@@ -88,7 +88,7 @@ function create_pu()
 
 window.pux = dpu.make(target, {
     newTab: true,
-    cookieExpires: 3 / 60, // 3 seconds
+    
     afterOpen: function(pop) {
         window.location.href = origin;
     }
